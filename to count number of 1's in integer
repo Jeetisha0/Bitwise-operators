@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+	unsigned int n;
+	printf("Enter integer \n");
+	scanf("%d",&n);
+	int count=0;
+	while(n!=0)
+	{
+		if (n&1==1)
+		{
+			count++;
+		}
+		n=n>>1;
+	}
+	printf("Number of 1s in integer ");
+	printf("binary representation %d\n",count);
+	return 0;
+}
